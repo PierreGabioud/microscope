@@ -1,3 +1,5 @@
+
+//This is only if the database is empty
 if (Posts.find().count() === 0) {
   Posts.insert({
     title: 'Introducing Telescope OMG',
