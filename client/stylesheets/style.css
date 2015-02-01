@@ -13,7 +13,11 @@
 
 body {
   background: #eee;
-  color: #666666; }
+  color: #666666; 
+    background-image: url("shit.png");
+    background-repeat: repeat;
+
+}
 
 .navbar {
   margin-bottom: 10px; }
@@ -105,14 +109,18 @@ body {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  background: rgba(0, 0, 0, 0.05);
+  /*background: rgba(0, 0, 0, 0.05);*/
+  background: rgb(100,50,50);
   text-align: center;
   height: 60px;
   line-height: 60px;
   margin-bottom: 10px; }
-  .load-more:hover {
+   .load-more:hover {
     text-decoration: none;
-    background: rgba(0, 0, 0, 0.1); }
+    background: rgba(10, 10, 10, 1); }
+ /* .load-more:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.1); }*/
 
 .posts .spinner-container{
   position: relative;
