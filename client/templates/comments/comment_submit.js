@@ -22,6 +22,8 @@ Template.commentSubmit.events({
       postId: template.data._id
     };
 
+
+
     var errors = {};
     if (! comment.body) {
       errors.body = "Please write some content";
@@ -29,11 +31,12 @@ Template.commentSubmit.events({
     }
 
     Meteor.call('commentInsert', comment, function(error, commentId) {
+      $body.val('');
+
       if (error){
         throwError(error.reason);
-      } else {
-        $body.val('');
-      }
+      } 
+
     });
   }
 });
